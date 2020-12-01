@@ -17,7 +17,7 @@ export default function Followers() {
       .then((res) => setData(res.data))
       .then(() => setLoading(false))
       .catch((err) => console.log(err));
-  });
+  }, [username]);
 
   return (
     <div>
